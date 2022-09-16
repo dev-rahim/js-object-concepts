@@ -41,9 +41,19 @@ const myFriends = new Object({
     name: ['rahim', 'karim', 'anisha', 'sakibul'],
     roll: '127219',
 })
-console.log();
+console.log(myFriends.name[2]);
 // 3. WITH OBJECT CREATE KEYWORD
-
+const man = Object.create({ name: 'gulsa mia' });
+console.log(man.name);
 // 4. USING CLASS CREAT  OBJECT
+class Teachers {
+    constructor(name, degicnation) {
+        this.name = name;
+        this.degicnation = degicnation;
+    }
+}
+const teacherData = new Teachers('Rahim', 'Junior Instructor');
+const teacherData1 = new Teachers('Rahim Uddin', 'Junior Instructor');
+console.log(teacherData.name, ' ', teacherData1.name);
 
 // 5.WITH THE USE OF FUNCTION 
